@@ -525,7 +525,6 @@ button {
 }
 /* modal windows */
 .backdrop {
-  /* display: flex; */
   background-color: #00000033;
   height: 100%;
   width: 100%;
@@ -571,7 +570,6 @@ button {
   display: flex;
   flex-direction: column;
   margin: 40px auto;
-  
 }
 .order-servise-form p { 
 font-weight: 700;
@@ -579,23 +577,32 @@ font-size: 20px;
 line-height: 1.15;
 text-align: center;
 color: var(--brand-color-black);
-/* position: absolute;} */
 }
-.user-name {
+.user {
   display: flex;
   flex-direction: column;
 position: relative;
 }
-.user-name:focus-within {
+.user:focus-within {
   fill: var(--brand-color-blue);
+} 
+
+.form-imput {
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+color: var(--brand-color-grey)
 }
-input, textarea{
+.form-imput:focus,
+.form-imput:hover {
+  border-color:  var(--brand-color-blue);
+  /* transition: border-color var(--brand-color-blue); */
+}
+input, textarea {
   padding: 8px;
   font-family: inherit;
   margin: 0 40px;
 }
-
-label {
+.user-label {
 display: flex;
 flex-direction: column;
 font-size: 12px;
