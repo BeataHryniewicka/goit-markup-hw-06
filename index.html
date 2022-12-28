@@ -267,7 +267,12 @@
                 <ul class="social-media-box">
                   <li>
                     <a href="#" class="social-media"
-                      ><svg class="social-media-icon" class="clients-li-icon" width="20" height="20">
+                      ><svg
+                        class="social-media-icon"
+                        class="clients-li-icon"
+                        width="20"
+                        height="20"
+                      >
                         <use
                           href="images/icons.svg#icon-instagram-2"
                         ></use></svg
@@ -418,7 +423,7 @@
             <li>
               <a href="#" class="social-media under"
                 ><svg class="social-media-icon" width="20" height="20">
-                  <use  href="images/icons.svg#icon-instagram-2"></use></svg
+                  <use href="images/icons.svg#icon-instagram-2"></use></svg
               ></a>
             </li>
             <li>
@@ -453,45 +458,84 @@
           </svg>
         </button>
         <form>
-  <div class="order-servise-form">
-    <p>Zostaw swoje dane w formularzu poniżej</p>
-  
-  <div class="user">
-      <label for="user_name"class="user-label">Imię</label>
-   <svg width="12" height="12">
-            <use href="images/icons.svg#icon-person-black-18dp-1-1"></use>
-          </svg>
-  <input type="text" name="first-name" id="user_name" class="form-imput"/>
-          </div>
-<label for="user_phone">Telefon</label>
-  <input type="phone" name="phone" id="user_phone"/>
-  <label for="user_email">Email</label>
-  <input type="email" name="email" id="user_email"/>
-  <label>Komentarz</label>
-  <textarea name="coment" rows="5" placeholder="Zostaw komentarz"></textarea>
+          <div class="order-servise-form">
+            <p>Zostaw swoje dane w formularzu poniżej</p>
 
-  <button type="submit">Submit</button>
-  </div>
-  <svg width="11" height="11">
+            <div class="user">
+              <label for="user_name" class="form-label"
+                >Imię
+                <svg class="form-svg" width="12" height="12">
+                  <use
+                    href="images/icons.svg#icon-person-black-18dp-1-1"
+                  ></use></svg
+              ></label>
+              <input
+                type="text"
+                name="first-name"
+                id="user_name"
+                class="form-imput"
+              />
+            </div>
+            <div class="user">
+              <label for="user_phone" class="form-label"
+                >Telefon
+                <svg class="form-svg" width="13" height="13">
+                  <use href="images/icons.svg#icon-phone-black-18dp-1"></use></svg
+              ></label>
+              <input
+                type="phone"
+                name="phone"
+                id="user_phone"
+                class="form-imput"
+              />
+            </div>
+            <div class="user">
+              <label for="user_email" class="form-label"
+                >Email
+                <svg class="form-svg" width="15" height="12">
+                  <use
+                    href="images/icons.svg#icon-email-black-18dp-1"
+                  ></use></svg
+              ></label>
+              <input
+                type="email"
+                name="email"
+                id="user_email"
+                class="form-imput"
+              />
+            </div>
+            <div class="user">
+              <label class="form-label">Komentarz</label>
+              <textarea
+                name="coment"
+                class="form-textarea"
+                placeholder="Zostaw komentarz"
+              ></textarea>
+            </div>
+        
+            <label class="consents">
+              <input type="checkbox" name="consents"  />Oświadczam, iż akceptuję<a class="rules"  href="#"> Regulamin</a> i <a class="rules" href="#">  Politykę Prywatności.</a> </label>
+
+            <div>
+              <button type="submit" class="hero-btn" >Wyślij</button>
+            </div>
+
+
+          <svg width="11" height="11">
             <use href="images/icons.svg#icon-icon-send"></use>
           </svg>
-           <svg width="11" height="11">
+          <svg width="11" height="11">
             <use href="images/icons.svg#icon-Vector"></use>
           </svg>
-          
-          <svg width="11" height="11">
-            <use href="images/icons.svg#icon-email-black-18dp-1"></use>
-          </svg>
-          <svg width="11" height="11">
-            <use href="images/icons.svg#icon-person-black-18dp-1-1"></use>
-          </svg>
+
+    
           <svg width="11" height="11">
             <use href="images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
-</form>
+        </form>
       </div>
     </div>
-    
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

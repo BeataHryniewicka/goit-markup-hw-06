@@ -559,13 +559,13 @@ button {
   color: var(--brand-color-black);
   font-size: 20px;
 }
-.is-hidden {
+/* .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .order-servise-form {
   display: flex;
   flex-direction: column;
@@ -578,6 +578,11 @@ line-height: 1.15;
 text-align: center;
 color: var(--brand-color-black);
 }
+input, textarea {
+  padding: 8px;
+  font-family: inherit;
+  margin: 0 40px;
+}
 .user {
   display: flex;
   flex-direction: column;
@@ -586,30 +591,63 @@ position: relative;
 .user:focus-within {
   fill: var(--brand-color-blue);
 } 
-
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--brand-color-dark-grey);
+  padding-left: 40px;
+  margin-top:10px;
+  margin-bottom: 4px;
+  position: relative;
+  }
 .form-imput {
+padding-left: 42px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-color: var(--brand-color-grey)
+color: var(--brand-color-grey);
+outline: transparent;
+transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-imput:focus,
 .form-imput:hover {
   border-color:  var(--brand-color-blue);
-  /* transition: border-color var(--brand-color-blue); */
 }
-input, textarea {
-  padding: 8px;
-  font-family: inherit;
-  margin: 0 40px;
+.form-svg { 
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* align-items: baseline; */
+
 }
-.user-label {
-display: flex;
-flex-direction: column;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--brand-color-dark-grey);
-padding-left: 40px;
-margin-top:10px;
-margin-bottom: 4px
+.form-svg:focus,
+.form-svg:hover {
+  fill: var(--brand-color-blue);
+}
+.form-textarea{
+height: 120px;
+resize: none;
+border: 1px solid rgba(33, 33, 33, 0.2);
+outline: transparent;
+border-radius: 4px;
+color: var(--brand-color-grey);
+transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin-bottom: 20px;
+}
+.form-textarea:focus,
+.form-textarea:hover {
+  border-color:  var(--brand-color-blue);
+}
+.consents {
+  
+} 
+.rules{
+  color: var(--brand-color-blue);
+  text-decoration: underline;
 }
