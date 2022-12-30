@@ -708,7 +708,7 @@ outline: transparent;
 .checkbox-svg {
   position: absolute;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill:red;
+  fill: vasr(--brand-color-white);
    border: 1px solid var(--brand-color-black); 
   border-radius: 2px;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
