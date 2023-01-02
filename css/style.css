@@ -498,7 +498,7 @@ button {
 }
 
 .newsletter-section {
-  margin-left: 78px;
+  margin-left: auto;
 }
 
 .newsletter-text {
@@ -707,7 +707,7 @@ transform: translateY(0%);
   line-height: 1.15;
   text-align: center;
   color: var(--brand-color-black);
-  margin-bottom: 12px;
+  margin-bottom: 2px;
 }
 
 .form-label {
@@ -753,11 +753,14 @@ transform: translateY(0%);
   left: 16px;
   transform: translateY(-50%);
 }
+.form-svg:focus,
+.form-svg:hover {
+  fill: var(--brand-color-blue);
+}
 
 .form-textarea {
   height: 120px;
   resize: none;
-  padding: 8px;
   font-family: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
